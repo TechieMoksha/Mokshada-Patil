@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="100%" height="100%">
+  <defs>
+    <style>
+      .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .font-serif { font-family: "Times New Roman", Times, serif; }
+    </style>
+    <!-- Background Waves -->
+    <linearGradient id="ciscoWave" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#f0f9ff" stop-opacity="0.02" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="900" height="640" fill="#ffffff" stroke="#334155" stroke-width="14" />
+
+  <!-- Background Decorative Lines -->
+  <g opacity="0.18">
+    <path d="M400 30 C550 80 650 40 850 150" fill="none" stroke="#0284c7" stroke-width="1.2" />
+    <path d="M420 40 C570 90 670 50 870 160" fill="none" stroke="#0284c7" stroke-width="1.2" />
+    <path d="M440 50 C590 100 690 60 890 170" fill="none" stroke="#0284c7" stroke-width="1.2" />
+    <path d="M460 60 C610 110 710 70 890 180" fill="none" stroke="#0284c7" stroke-width="1.2" />
+  </g>
+
+  <!-- Content -->
+  <g transform="translate(65, 55)" class="font-sans">
+    <!-- Cisco Networking Academy Header -->
+    <g transform="translate(0, 0)">
+      <!-- Cisco Bars -->
+      <g fill="#0284c7">
+        <rect x="0" y="16" width="3" height="12" rx="1.5" />
+        <rect x="6" y="10" width="3" height="18" rx="1.5" />
+        <rect x="12" y="4" width="3" height="24" rx="1.5" />
+        <rect x="18" y="10" width="3" height="18" rx="1.5" />
+        <rect x="24" y="16" width="3" height="12" rx="1.5" />
+        <rect x="30" y="2" width="3" height="26" rx="1.5" />
+        <rect x="36" y="10" width="3" height="18" rx="1.5" />
+        <rect x="42" y="16" width="3" height="12" rx="1.5" />
+      </g>
+      <text x="56" y="14" font-size="11" font-weight="600" fill="#0369a1" letter-spacing="0.5">Networking</text>
+      <text x="56" y="32" font-size="20" font-weight="800" fill="#0369a1" letter-spacing="-0.5">Academy</text>
+      <text x="0" y="40" font-size="12" font-weight="800" fill="#0284c7" letter-spacing="1">CISCO</text>
+    </g>
+
+    <!-- Certificate Title -->
+    <text x="0" y="98" font-size="30" font-weight="800" fill="#0f172a" letter-spacing="-0.5">Certificate of Course Completion</text>
+
+    <!-- Student Name -->
+    <text x="0" y="165" font-size="28" font-weight="600" font-style="italic" fill="#0284c7">Mokshada Patil</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="200" font-size="15" font-weight="400" font-style="italic" fill="#334155">has successfully achieved student level credential for completing the <tspan font-weight="600">Data Analytics</tspan></text>
+    <text x="0" y="222" font-size="15" font-weight="600" font-style="italic" fill="#334155">Essentials <tspan font-weight="400">course.</tspan></text>
+
+    <!-- Learning Objectives -->
+    <text x="0" y="260" font-size="13.5" font-style="italic" fill="#475569">The student was able to proficiently:</text>
+
+    <g transform="translate(10, 275)" font-size="12" font-style="italic" fill="#334155">
+      <circle cx="0" cy="8" r="2" fill="#0284c7" />
+      <text x="14" y="12">Explain how the data analytics process creates value from data.</text>
+
+      <circle cx="0" cy="28" r="2" fill="#0284c7" />
+      <text x="14" y="32">Explain the characteristics of data, including formats, availability and methods to acquire.</text>
+
+      <circle cx="0" cy="48" r="2" fill="#0284c7" />
+      <text x="14" y="52">Transform data using analytics tools.</text>
+
+      <circle cx="0" cy="68" r="2" fill="#0284c7" />
+      <text x="14" y="72">Analyze data using basic statistical and data preparation techniques.</text>
+
+      <circle cx="0" cy="88" r="2" fill="#0284c7" />
+      <text x="14" y="92">Complete hands-on lab using Excel, SQL, Tableau and other tools.</text>
+
+      <circle cx="0" cy="108" r="2" fill="#0284c7" />
+      <text x="14" y="112">Evaluate and share project portfolio.</text>
+    </g>
+
+    <!-- Bottom Footer Area -->
+    <!-- Verified Badge & QR -->
+    <g transform="translate(0, 420)">
+      <!-- Badge -->
+      <g>
+        <rect width="80" height="70" rx="8" fill="#0284c7" />
+        <path d="M0 45 Q40 30 80 45 L80 70 L0 70 Z" fill="#0369a1" />
+        <path d="M0 55 Q40 40 80 55 L80 70 L0 70 Z" fill="#0ea5e9" opacity="0.6" />
+        <text x="40" y="18" font-size="7" font-weight="700" fill="#ffffff" text-anchor="middle">Networking</text>
+        <text x="40" y="26" font-size="7" font-weight="700" fill="#ffffff" text-anchor="middle">Academy</text>
+        <text x="40" y="36" font-size="7" font-weight="800" fill="#bae6fd" text-anchor="middle">Verified</text>
+        <text x="40" y="64" font-size="5.5" font-weight="600" fill="#ffffff" text-anchor="middle">Data Analytics Essentials</text>
+      </g>
+      <!-- QR Code Mock -->
+      <g transform="translate(105, 5)">
+        <rect width="52" height="52" fill="#ffffff" stroke="#94a3b8" stroke-width="1" />
+        <!-- QR Patterns -->
+        <rect x="4" y="4" width="16" height="16" fill="#0f172a" />
+        <rect x="7" y="7" width="10" height="10" fill="#ffffff" />
+        <rect x="9" y="9" width="6" height="6" fill="#0f172a" />
+
+        <rect x="32" y="4" width="16" height="16" fill="#0f172a" />
+        <rect x="35" y="7" width="10" height="10" fill="#ffffff" />
+        <rect x="37" y="9" width="6" height="6" fill="#0f172a" />
+
+        <rect x="4" y="32" width="16" height="16" fill="#0f172a" />
+        <rect x="7" y="35" width="10" height="10" fill="#ffffff" />
+        <rect x="9" y="37" width="6" height="6" fill="#0f172a" />
+        <text x="26" y="64" font-size="7" fill="#64748b" text-anchor="middle">Scan to Verify</text>
+      </g>
+    </g>
+
+    <!-- Signature Right -->
+    <g transform="translate(420, 425)">
+      <path d="M10 30 Q40 5 70 25 Q110 50 150 15 Q190 35 240 20" fill="none" stroke="#334155" stroke-width="2" />
+      <line x1="0" y1="45" x2="260" y2="45" stroke="#94a3b8" stroke-width="1" />
+      <text x="0" y="62" font-size="12" font-weight="600" fill="#1e293b">Lynn Bloomer</text>
+      <text x="0" y="78" font-size="11" fill="#64748b">Director, Cisco Networking Academy</text>
+    </g>
+
+    <!-- Issue Date -->
+    <text x="0" y="525" font-size="9" fill="#0284c7">Issued on: Oct 13, 2026</text>
+  </g>
+</svg>

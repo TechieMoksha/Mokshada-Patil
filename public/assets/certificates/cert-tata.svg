@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="100%" height="100%">
+  <defs>
+    <style>
+      .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background Canvas with Dark Border -->
+  <rect width="900" height="640" fill="#ffffff" stroke="#334155" stroke-width="12" />
+
+  <!-- Left Blue Vertical Accent Bar -->
+  <rect x="0" y="0" width="36" height="640" fill="#1d4ed8" />
+
+  <!-- Top Right Forage Banner -->
+  <g transform="translate(640, 0)">
+    <path d="M0 0 H180 V150 L90 170 L0 150 Z" fill="#1e40af" />
+    <g transform="translate(30, 32)">
+      <polygon points="12,0 24,7 24,21 12,28 0,21 0,7" fill="none" stroke="#ffffff" stroke-width="2.5" />
+      <text x="35" y="19" font-size="20" font-weight="800" fill="#ffffff" class="font-sans">Forage</text>
+      <text x="-14" y="65" font-size="10.5" fill="#e0e7ff" class="font-sans" text-anchor="start">Inspiring and empowering</text>
+      <text x="-14" y="80" font-size="10.5" fill="#e0e7ff" class="font-sans" text-anchor="start">future professionals</text>
+    </g>
+  </g>
+
+  <!-- Content -->
+  <g transform="translate(75, 55)" class="font-sans">
+    <!-- Tata Logo -->
+    <g transform="translate(0, 0)">
+      <circle cx="28" cy="28" r="26" fill="#1d4ed8" />
+      <!-- Tata stylized T -->
+      <path d="M12 20 H44 M28 20 V42 M16 28 H40" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+      <text x="28" y="70" font-size="18" font-weight="900" fill="#1d4ed8" text-anchor="middle" letter-spacing="3">TATA</text>
+    </g>
+
+    <line x1="0" y1="105" x2="480" y2="105" stroke="#e2e8f0" stroke-width="1" />
+
+    <!-- Student Name -->
+    <text x="0" y="175" font-size="34" font-weight="800" fill="#0f172a">Mokshada Patil</text>
+
+    <!-- Program Name -->
+    <text x="0" y="222" font-size="26" font-weight="800" fill="#1e293b">GenAI Powered Data Analytics Job Simulation</text>
+
+    <!-- Certificate of Completion -->
+    <text x="0" y="275" font-size="20" font-weight="600" fill="#334155">Certificate of Completion</text>
+    <text x="0" y="304" font-size="15" fill="#475569">August 15th, 2025</text>
+
+    <line x1="0" y1="330" x2="740" y2="330" stroke="#e2e8f0" stroke-width="1" />
+
+    <!-- Practical Tasks Completed -->
+    <g transform="translate(0, 350)">
+      <text x="0" y="0" font-size="11" fill="#475569">Over the period of August 2025, Mokshada Patil has completed practical tasks in:</text>
+      <text x="0" y="24" font-size="11.5" font-weight="500" fill="#1e293b">Exploratory data analysis and risk profiling</text>
+      <text x="0" y="40" font-size="11.5" font-weight="500" fill="#1e293b">Predicting delinquency with AI</text>
+      <text x="0" y="56" font-size="11.5" font-weight="500" fill="#1e293b">Business report and data storytelling for collections strategy</text>
+      <text x="0" y="72" font-size="11.5" font-weight="500" fill="#1e293b">Implementing an AI-driven collections strategy</text>
+    </g>
+
+    <!-- Signature Right -->
+    <g transform="translate(630, 350)">
+      <path d="M10 35 Q30 5 50 40 Q70 10 90 35" fill="none" stroke="#94a3b8" stroke-width="2" />
+      <text x="0" y="65" font-size="12" font-weight="700" fill="#0f172a">Tom Brunskill</text>
+      <text x="0" y="80" font-size="11" fill="#475569">CEO, Co-Founder of</text>
+      <text x="0" y="94" font-size="11" fill="#475569">Forage</text>
+    </g>
+
+    <!-- Verification Codes Footer -->
+    <g transform="translate(0, 500)">
+      <text x="0" y="0" font-size="8.5" fill="#64748b">Enrolment Verification Code <tspan font-weight="600">ESFXzcfB39XRGNx8T</tspan> | User Verification Code <tspan font-weight="600">EGNqcgKxPrDzPefDB</tspan> | Issued by <tspan font-weight="600">Forage</tspan></text>
+    </g>
+  </g>
+</svg>

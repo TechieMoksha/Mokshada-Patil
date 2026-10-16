@@ -1,0 +1,354 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#182c47" />
+      <stop offset="50%" stop-color="#13233a" />
+      <stop offset="100%" stop-color="#0c1728" />
+    </linearGradient>
+
+    <!-- Wood Board Gradient -->
+    <radialGradient id="woodGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9a5a32" />
+      <stop offset="70%" stop-color="#783e1c" />
+      <stop offset="95%" stop-color="#5a2c10" />
+      <stop offset="100%" stop-color="#3d1b06" />
+    </radialGradient>
+
+    <!-- Pizza Crust Gradient -->
+    <radialGradient id="crustGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="78%" stop-color="#f59e0b" />
+      <stop offset="88%" stop-color="#d97706" />
+      <stop offset="97%" stop-color="#b45309" />
+      <stop offset="100%" stop-color="#78350f" />
+    </radialGradient>
+
+    <!-- Cheese Gradient -->
+    <radialGradient id="cheeseGrad" cx="48%" cy="48%" r="48%">
+      <stop offset="0%" stop-color="#fef3c7" />
+      <stop offset="30%" stop-color="#fde047" />
+      <stop offset="75%" stop-color="#f59e0b" />
+      <stop offset="98%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </radialGradient>
+
+    <!-- Gold Coin Gradient -->
+    <linearGradient id="coinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <linearGradient id="coinSideGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="boardShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.55" />
+    </filter>
+
+    <filter id="iconShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="5" stdDeviation="4" flood-color="#3d1b06" flood-opacity="0.45" />
+    </filter>
+
+    <filter id="elementShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Deep Blue Analytics Surface -->
+  <rect width="1000" height="600" fill="url(#bgGrad)" />
+
+  <!-- Background Financial Graph & Grid (Top Left) -->
+  <g opacity="0.22" stroke="#38bdf8">
+    <line x1="60" y1="200" x2="260" y2="200" stroke-width="1.5" stroke-dasharray="4,4" />
+    <line x1="60" y1="150" x2="260" y2="150" stroke-width="1.5" stroke-dasharray="4,4" />
+    <line x1="60" y1="100" x2="260" y2="100" stroke-width="1.5" stroke-dasharray="4,4" />
+    <line x1="60" y1="50" x2="260" y2="50" stroke-width="1.5" stroke-dasharray="4,4" />
+    <!-- Bar chart columns in background -->
+    <rect x="75" y="140" width="16" height="60" rx="3" fill="#38bdf8" />
+    <rect x="105" y="110" width="16" height="90" rx="3" fill="#38bdf8" />
+    <rect x="135" y="125" width="16" height="75" rx="3" fill="#38bdf8" />
+    <rect x="165" y="85" width="16" height="115" rx="3" fill="#38bdf8" />
+    <rect x="195" y="60" width="16" height="140" rx="3" fill="#38bdf8" />
+    <!-- Upward arrow line -->
+    <path d="M70 170 Q 140 130 220 50" fill="none" stroke="#60a5fa" stroke-width="3" stroke-linecap="round" />
+    <polygon points="220,40 226,56 210,54" fill="#60a5fa" />
+  </g>
+
+  <!-- Top Right Plant in Pot -->
+  <g transform="translate(860, 40)" opacity="0.85" filter="url(#elementShadow)">
+    <!-- Pot -->
+    <rect x="15" y="85" width="60" height="50" rx="6" fill="#475569" />
+    <rect x="10" y="80" width="70" height="10" rx="3" fill="#64748b" />
+    <!-- Leaves -->
+    <path d="M45 80 Q 20 40 -10 30 Q 10 65 45 80 Z" fill="#22c55e" />
+    <path d="M45 80 Q 45 15 50 -10 Q 60 40 45 80 Z" fill="#16a34a" />
+    <path d="M45 80 Q 75 35 110 30 Q 80 65 45 80 Z" fill="#4ade80" />
+    <path d="M45 80 Q 90 60 120 70 Q 85 85 45 80 Z" fill="#15803d" />
+  </g>
+
+  <!-- Top Right Analytics Report Document -->
+  <g transform="translate(820, 160)" opacity="0.35">
+    <rect width="130" height="170" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" />
+    <!-- Pie Chart inside doc -->
+    <circle cx="65" cy="55" r="28" fill="none" stroke="#38bdf8" stroke-width="12" stroke-dasharray="88 176" />
+    <circle cx="65" cy="55" r="28" fill="none" stroke="#60a5fa" stroke-width="12" stroke-dasharray="55 176" stroke-dashoffset="-88" />
+    <!-- Text Lines -->
+    <line x1="20" y1="105" x2="110" y2="105" stroke="#94a3b8" stroke-width="3" stroke-linecap="round" />
+    <line x1="20" y1="120" x2="90" y2="120" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="20" y1="135" x2="100" y2="135" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="20" y1="150" x2="75" y2="150" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Left Bottom Dark Calculator -->
+  <g transform="translate(30, 350)" filter="url(#elementShadow)">
+    <rect width="135" height="175" rx="14" fill="#1e293b" stroke="#334155" stroke-width="2" />
+    <!-- Display screen -->
+    <rect x="14" y="16" width="107" height="34" rx="6" fill="#0f172a" />
+    <text x="110" y="40" font-family="monospace" font-size="16" font-weight="700" fill="#38bdf8" text-anchor="end">48,206.50</text>
+    <!-- Button grid -->
+    <g fill="#334155">
+      <rect x="16" y="60" width="22" height="18" rx="4" />
+      <rect x="44" y="60" width="22" height="18" rx="4" />
+      <rect x="72" y="60" width="22" height="18" rx="4" />
+      <rect x="100" y="60" width="22" height="18" rx="4" fill="#f59e0b" />
+
+      <rect x="16" y="86" width="22" height="18" rx="4" />
+      <rect x="44" y="86" width="22" height="18" rx="4" />
+      <rect x="72" y="86" width="22" height="18" rx="4" />
+      <rect x="100" y="86" width="22" height="18" rx="4" />
+
+      <rect x="16" y="112" width="22" height="18" rx="4" />
+      <rect x="44" y="112" width="22" height="18" rx="4" />
+      <rect x="72" y="112" width="22" height="18" rx="4" />
+      <rect x="100" y="112" width="22" height="18" rx="4" />
+
+      <rect x="16" y="138" width="50" height="20" rx="4" />
+      <rect x="72" y="138" width="22" height="20" rx="4" />
+      <rect x="100" y="138" width="22" height="20" rx="4" fill="#0284c7" />
+    </g>
+  </g>
+
+  <!-- Bottom Left Gold Coin Stacks -->
+  <!-- Coin Stack 1 (Far Left) -->
+  <g transform="translate(18, 255)" filter="url(#elementShadow)">
+    <!-- Base stack -->
+    <path d="M 0 35 A 40 14 0 0 0 80 35 V 70 A 40 14 0 0 1 0 70 Z" fill="url(#coinSideGrad)" />
+    <ellipse cx="40" cy="35" rx="40" ry="14" fill="url(#coinGrad)" />
+    <path d="M 0 50 A 40 14 0 0 0 80 50 V 65 A 40 14 0 0 1 0 65 Z" fill="url(#coinSideGrad)" />
+    <ellipse cx="40" cy="50" rx="40" ry="14" fill="url(#coinGrad)" stroke="#fef08a" stroke-width="0.8" />
+    <path d="M 0 65 A 40 14 0 0 0 80 65 V 80 A 40 14 0 0 1 0 80 Z" fill="url(#coinSideGrad)" />
+    <ellipse cx="40" cy="65" rx="40" ry="14" fill="url(#coinGrad)" stroke="#fef08a" stroke-width="0.8" />
+  </g>
+  <!-- Coin Stack 2 (Lower Left) -->
+  <g transform="translate(80, 520)" filter="url(#elementShadow)">
+    <path d="M 0 15 A 36 12 0 0 0 72 15 V 32 A 36 12 0 0 1 0 32 Z" fill="url(#coinSideGrad)" />
+    <ellipse cx="36" cy="15" rx="36" ry="12" fill="url(#coinGrad)" />
+    <path d="M 0 28 A 36 12 0 0 0 72 28 V 45 A 36 12 0 0 1 0 45 Z" fill="url(#coinSideGrad)" />
+    <ellipse cx="36" cy="28" rx="36" ry="12" fill="url(#coinGrad)" stroke="#fef08a" stroke-width="0.8" />
+  </g>
+  <!-- Single Flat Gold Coin -->
+  <g transform="translate(145, 525)" filter="url(#elementShadow)">
+    <path d="M 0 12 A 42 14 0 0 0 84 12 V 22 A 42 14 0 0 1 0 22 Z" fill="url(#coinSideGrad)" />
+    <ellipse cx="42" cy="12" rx="42" ry="14" fill="url(#coinGrad)" stroke="#fef08a" stroke-width="1" />
+    <ellipse cx="42" cy="12" rx="34" ry="10" fill="none" stroke="#d97706" stroke-width="1.2" stroke-dasharray="3,3" />
+  </g>
+
+  <!-- Bottom Right Spiral Notebook & Pen -->
+  <g transform="translate(700, 480)" filter="url(#elementShadow)">
+    <!-- Notebook body -->
+    <rect width="280" height="140" rx="8" fill="#fdfbf7" stroke="#cbd5e1" stroke-width="1.5" />
+    <!-- Horizontal Ruled lines -->
+    <line x1="20" y1="35" x2="260" y2="35" stroke="#e2e8f0" stroke-width="1.5" />
+    <line x1="20" y1="60" x2="260" y2="60" stroke="#e2e8f0" stroke-width="1.5" />
+    <line x1="20" y1="85" x2="260" y2="85" stroke="#e2e8f0" stroke-width="1.5" />
+    <line x1="20" y1="110" x2="260" y2="110" stroke="#e2e8f0" stroke-width="1.5" />
+    <!-- Top Spiral rings -->
+    <g fill="#94a3b8" stroke="#64748b" stroke-width="1">
+      <rect x="25" y="-10" width="8" height="22" rx="4" />
+      <rect x="55" y="-10" width="8" height="22" rx="4" />
+      <rect x="85" y="-10" width="8" height="22" rx="4" />
+      <rect x="115" y="-10" width="8" height="22" rx="4" />
+      <rect x="145" y="-10" width="8" height="22" rx="4" />
+      <rect x="175" y="-10" width="8" height="22" rx="4" />
+      <rect x="205" y="-10" width="8" height="22" rx="4" />
+      <rect x="235" y="-10" width="8" height="22" rx="4" />
+    </g>
+  </g>
+
+  <!-- Executive Pen (Angled across bottom right) -->
+  <g transform="translate(860, 360) rotate(55)" filter="url(#elementShadow)">
+    <!-- Pen barrel -->
+    <rect x="0" y="0" width="14" height="150" rx="3" fill="#1e293b" />
+    <!-- Golden tip and ring -->
+    <rect x="0" y="25" width="14" height="6" fill="#f59e0b" />
+    <polygon points="0,150 14,150 7,175" fill="#f59e0b" />
+    <polygon points="5,170 9,170 7,178" fill="#1e293b" />
+    <!-- Clip -->
+    <rect x="-3" y="10" width="3" height="40" rx="1.5" fill="#f59e0b" />
+  </g>
+
+  <!-- ============================================== -->
+  <!-- CENTERPIECE: WOODEN BOARD & ANALYTICAL PIZZA  -->
+  <!-- ============================================== -->
+
+  <!-- Round Wooden Platter -->
+  <g filter="url(#boardShadow)">
+    <!-- Outer wooden rim -->
+    <circle cx="500" cy="300" r="235" fill="url(#woodGrad)" stroke="#271103" stroke-width="8" />
+    <!-- Inner groove -->
+    <circle cx="500" cy="300" r="226" fill="none" stroke="#2a1204" stroke-width="2" opacity="0.6" />
+    <circle cx="500" cy="300" r="224" fill="none" stroke="#a16207" stroke-width="1.2" opacity="0.3" />
+  </g>
+
+  <!-- ==================== PIZZA SLICES ==================== -->
+
+  <!-- SLICE 1: LEFT LARGE SLICE (50% - Half Pizza: Real Estate / Housing & Receipt) -->
+  <!-- Wedge from 90° down through 180° to 270° with gap -->
+  <g filter="url(#elementShadow)">
+    <!-- Crust & Cheese Body -->
+    <path d="M 488 88 A 215 215 0 0 0 488 512 L 488 300 Z" fill="url(#cheeseGrad)" stroke="#b45309" stroke-width="14" stroke-linejoin="round" />
+    <!-- Tomato sauce accent under crust -->
+    <path d="M 488 95 A 206 206 0 0 0 488 505" fill="none" stroke="#dc2626" stroke-width="5" opacity="0.85" />
+    <!-- Toasted Cheese Speckles -->
+    <circle cx="380" cy="220" r="14" fill="#b45309" opacity="0.35" />
+    <circle cx="440" cy="180" r="10" fill="#92400e" opacity="0.3" />
+    <circle cx="340" cy="340" r="18" fill="#b45309" opacity="0.3" />
+    <circle cx="420" cy="420" r="12" fill="#78350f" opacity="0.35" />
+    <circle cx="295" cy="300" r="15" fill="#d97706" opacity="0.4" />
+
+    <!-- Basil Leaves on Left Slice -->
+    <path d="M 450 140 C 470 120 490 140 470 160 C 450 180 430 160 450 140 Z" fill="#15803d" />
+    <path d="M 330 240 C 350 220 370 240 350 260 C 330 280 310 260 330 240 Z" fill="#16a34a" />
+    <path d="M 430 380 C 450 360 470 380 450 400 C 430 420 410 400 430 380 Z" fill="#15803d" />
+    <path d="M 350 440 C 370 420 390 440 370 460 C 350 480 330 460 350 440 Z" fill="#16a34a" />
+
+    <!-- House Silhouette Icon (Top Center of Left Slice) -->
+    <g transform="translate(370, 215)" filter="url(#iconShadow)">
+      <!-- House base -->
+      <path d="M -45 5 L 0 -35 L 45 5 V 45 H -45 Z" fill="#172554" />
+      <!-- Chimney -->
+      <rect x="18" y="-32" width="14" height="24" fill="#172554" />
+      <!-- Door -->
+      <rect x="-11" y="16" width="22" height="29" rx="3" fill="#3b82f6" opacity="0.9" />
+      <!-- Window -->
+      <rect x="-35" y="10" width="16" height="16" rx="2" fill="#ffffff" />
+      <line x1="-27" y1="10" x2="-27" y2="26" stroke="#172554" stroke-width="1.5" />
+      <line x1="-35" y1="18" x2="-19" y2="18" stroke="#172554" stroke-width="1.5" />
+    </g>
+
+    <!-- White Sales Receipt Bill (Below House on Left Slice) -->
+    <g transform="translate(365, 330)" filter="url(#iconShadow)">
+      <!-- White zigzag folded paper -->
+      <path d="M 0 0 H 65 V 85 L 58 80 L 51 85 L 44 80 L 37 85 L 30 80 L 23 85 L 16 80 L 9 85 L 0 80 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+      <!-- Receipt lines -->
+      <rect x="10" y="14" width="45" height="4" rx="2" fill="#64748b" />
+      <rect x="10" y="24" width="35" height="3" rx="1.5" fill="#94a3b8" />
+      <rect x="10" y="32" width="40" height="3" rx="1.5" fill="#94a3b8" />
+      <rect x="10" y="40" width="32" height="3" rx="1.5" fill="#94a3b8" />
+      <line x1="10" y1="48" x2="55" y2="48" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="2,2" />
+      <!-- Total / Barcode -->
+      <rect x="10" y="54" width="22" height="4" rx="1" fill="#0f172a" />
+      <rect x="36" y="54" width="19" height="4" rx="1" fill="#0f172a" />
+      <!-- Barcode bars -->
+      <g fill="#94a3b8">
+        <rect x="10" y="66" width="2" height="10" />
+        <rect x="14" y="66" width="4" height="10" />
+        <rect x="20" y="66" width="1" height="10" />
+        <rect x="23" y="66" width="3" height="10" />
+        <rect x="28" y="66" width="5" height="10" />
+        <rect x="35" y="66" width="2" height="10" />
+        <rect x="39" y="66" width="4" height="10" />
+        <rect x="45" y="66" width="2" height="10" />
+        <rect x="49" y="66" width="5" height="10" />
+      </g>
+    </g>
+  </g>
+
+  <!-- SLICE 2: TOP RIGHT SLICE (25% - Gifting & Entertainment / Headphones) -->
+  <g filter="url(#elementShadow)">
+    <!-- Wedge from angle ~280° to 355° -->
+    <path d="M 505 285 L 512 88 A 215 215 0 0 1 708 245 Z" fill="url(#cheeseGrad)" stroke="#b45309" stroke-width="14" stroke-linejoin="round" />
+    <path d="M 522 96 A 206 206 0 0 1 700 238" fill="none" stroke="#dc2626" stroke-width="5" opacity="0.85" />
+
+    <!-- Basil Leaves -->
+    <path d="M 580 140 C 600 120 620 140 600 160 C 580 180 560 160 580 140 Z" fill="#15803d" />
+    <path d="M 640 210 C 660 190 680 210 660 230 C 640 250 620 230 640 210 Z" fill="#16a34a" />
+
+    <!-- Blue Gift Box with Yellow Ribbon -->
+    <g transform="translate(565, 160)" filter="url(#iconShadow)">
+      <!-- Main box cube -->
+      <rect x="0" y="12" width="48" height="42" rx="4" fill="#0284c7" />
+      <!-- Box lid -->
+      <rect x="-4" y="8" width="56" height="10" rx="3" fill="#0369a1" />
+      <!-- Vertical yellow ribbon -->
+      <rect x="20" y="8" width="8" height="46" fill="#facc15" />
+      <!-- Horizontal ribbon on box -->
+      <rect x="0" y="28" width="48" height="8" fill="#facc15" />
+      <!-- Decorative Bow -->
+      <ellipse cx="18" cy="4" rx="8" ry="5" fill="#fde047" transform="rotate(-25 18 4)" />
+      <ellipse cx="30" cy="4" rx="8" ry="5" fill="#fde047" transform="rotate(25 30 4)" />
+      <circle cx="24" cy="5" r="4" fill="#eab308" />
+    </g>
+
+    <!-- Navy Over-Ear Headphones -->
+    <g transform="translate(635, 205)" filter="url(#iconShadow)">
+      <!-- Headband Arc -->
+      <path d="M 0 35 A 26 26 0 0 1 52 35" fill="none" stroke="#0f172a" stroke-width="7" stroke-linecap="round" />
+      <!-- Left Earcup -->
+      <rect x="-6" y="30" width="14" height="24" rx="6" fill="#1e293b" />
+      <rect x="0" y="34" width="6" height="16" rx="3" fill="#38bdf8" />
+      <!-- Right Earcup -->
+      <rect x="44" y="30" width="14" height="24" rx="6" fill="#1e293b" />
+      <rect x="46" y="34" width="6" height="16" rx="3" fill="#38bdf8" />
+    </g>
+  </g>
+
+  <!-- SLICE 3: BOTTOM RIGHT SLICE (25% - Financial Growth: Piggy Bank & Bar Chart) -->
+  <g filter="url(#elementShadow)">
+    <!-- Wedge from angle ~5° to 85° -->
+    <path d="M 505 315 L 708 265 A 215 215 0 0 1 515 510 Z" fill="url(#cheeseGrad)" stroke="#b45309" stroke-width="14" stroke-linejoin="round" />
+    <path d="M 700 278 A 206 206 0 0 1 522 500" fill="none" stroke="#dc2626" stroke-width="5" opacity="0.85" />
+
+    <!-- Basil Leaves -->
+    <path d="M 560 370 C 580 350 600 370 580 390 C 560 410 540 390 560 370 Z" fill="#15803d" />
+    <path d="M 640 430 C 660 410 680 430 660 450 C 640 470 620 450 640 430 Z" fill="#16a34a" />
+
+    <!-- Golden Piggy Bank Icon -->
+    <g transform="translate(565, 360)" filter="url(#iconShadow)">
+      <!-- Piggy body -->
+      <ellipse cx="28" cy="24" rx="26" ry="20" fill="#f59e0b" />
+      <!-- Snout -->
+      <rect x="50" y="16" width="10" height="14" rx="5" fill="#d97706" />
+      <!-- Eye -->
+      <circle cx="44" cy="18" r="3" fill="#78350f" />
+      <!-- Ear -->
+      <polygon points="34,6 44,14 30,15" fill="#d97706" />
+      <!-- Legs -->
+      <rect x="14" y="38" width="8" height="12" rx="3" fill="#d97706" />
+      <rect x="34" y="38" width="8" height="12" rx="3" fill="#d97706" />
+      <!-- Coin Slot -->
+      <rect x="22" y="4" width="12" height="3" rx="1.5" fill="#92400e" />
+      <!-- Gold Coin entering slot -->
+      <ellipse cx="28" cy="2" rx="6" ry="4" fill="#fde047" stroke="#b45309" stroke-width="1" />
+    </g>
+
+    <!-- Upward Trending Growth Bar Chart with Arrow -->
+    <g transform="translate(645, 375)" filter="url(#iconShadow)">
+      <!-- 3 Ascending Bars -->
+      <rect x="0" y="24" width="12" height="24" rx="3" fill="#10b981" />
+      <rect x="16" y="14" width="12" height="34" rx="3" fill="#059669" />
+      <rect x="32" y="2" width="12" height="46" rx="3" fill="#047857" />
+      <!-- Upward Trend Arrow -->
+      <path d="M -2 20 Q 18 10 46 -8" fill="none" stroke="#047857" stroke-width="3" stroke-linecap="round" />
+      <polygon points="46,-16 48,-4 36,-10" fill="#047857" />
+    </g>
+  </g>
+
+  <!-- Ambient Light & Vignette Glow -->
+  <circle cx="500" cy="300" r="380" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.04" />
+</svg>

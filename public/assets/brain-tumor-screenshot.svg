@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 680" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#31104b" />
+      <stop offset="35%" stop-color="#581c87" />
+      <stop offset="70%" stop-color="#7e22ce" />
+      <stop offset="100%" stop-color="#a21caf" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+    <radialGradient id="brainGlow" cx="45%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="tumorGlow" cx="42%" cy="32%" r="25%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="40%" stop-color="#e0e7ff" stop-opacity="0.75" />
+      <stop offset="80%" stop-color="#818cf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <style>
+      .font-ui { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background Gradient -->
+  <rect width="800" height="680" fill="url(#bgGrad)" />
+
+  <!-- Center Card -->
+  <g transform="translate(180, 24)" filter="url(#softShadow)" class="font-ui">
+    <rect width="440" height="632" rx="20" fill="#ffffff" />
+
+    <!-- Card Header -->
+    <g transform="translate(0, 48)">
+      <!-- Brain Icon -->
+      <g transform="translate(85, -22) scale(0.9)">
+        <ellipse cx="14" cy="14" rx="14" ry="12" fill="#ec4899" opacity="0.85" />
+        <ellipse cx="20" cy="12" rx="10" ry="10" fill="#f472b6" opacity="0.9" />
+        <circle cx="10" cy="18" r="7" fill="#db2777" opacity="0.7" />
+      </g>
+      <text x="122" y="0" font-size="23" font-weight="800" fill="#1e1b4b" text-anchor="start">Brain Tumor Detection</text>
+      <text x="220" y="26" font-size="12" font-weight="500" fill="#64748b" text-anchor="middle">Upload MRI image to detect brain tumor using CNN</text>
+    </g>
+
+    <!-- Upload Box (Dashed) -->
+    <g transform="translate(36, 108)">
+      <rect width="368" height="64" rx="6" fill="#fafafa" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4,4" />
+      <!-- Choose File Button -->
+      <g transform="translate(36, 18)">
+        <rect width="88" height="26" rx="4" fill="#efefef" stroke="#767676" stroke-width="1" />
+        <text x="44" y="17" font-size="11.5" font-weight="500" fill="#1f2937" text-anchor="middle">Choose file</text>
+        <text x="100" y="17" font-size="11.5" font-weight="400" fill="#475569">No file chosen</text>
+      </g>
+    </g>
+
+    <!-- Predict Result Button -->
+    <g transform="translate(150, 192)">
+      <rect width="140" height="34" rx="6" fill="#1e3a8a" />
+      <text x="70" y="22" font-size="12.5" font-weight="600" fill="#ffffff" text-anchor="middle">Predict Result</text>
+    </g>
+
+    <!-- Prediction Result Heading -->
+    <text x="220" y="264" font-size="16.5" font-weight="700" fill="#0f172a" text-anchor="middle">Prediction Result</text>
+
+    <!-- Result Box -->
+    <g transform="translate(36, 280)">
+      <rect width="368" height="268" rx="14" fill="#f8fafc" />
+
+      <!-- MRI Image Frame -->
+      <g transform="translate(94, 16)">
+        <rect width="180" height="175" rx="8" fill="#05070d" />
+        <!-- Skull Contour -->
+        <ellipse cx="90" cy="86" rx="68" ry="76" fill="#181e29" stroke="#475569" stroke-width="2" />
+        <!-- Brain Hemispheres -->
+        <path d="M90 20 Q70 50 65 86 Q62 125 90 152 Q118 125 115 86 Q110 50 90 20 Z" fill="#242e3f" />
+        <line x1="90" y1="20" x2="90" y2="152" stroke="#05070d" stroke-width="2.5" />
+        <!-- Brain Sulci & Gyri details -->
+        <path d="M50 60 Q65 72 60 90 Q52 110 68 125" fill="none" stroke="#334155" stroke-width="2" opacity="0.6" />
+        <path d="M130 60 Q115 72 120 90 Q128 110 112 125" fill="none" stroke="#334155" stroke-width="2" opacity="0.6" />
+        <ellipse cx="90" cy="88" rx="65" ry="72" fill="url(#brainGlow)" />
+        <!-- Detected Tumor (Hyperintensity lesion) -->
+        <circle cx="78" cy="68" r="16" fill="url(#tumorGlow)" />
+        <ellipse cx="78" cy="68" rx="14" ry="12" fill="#ffffff" opacity="0.85" filter="drop-shadow(0 0 6px #60a5fa)" />
+        <path d="M72 62 Q78 58 84 64 Q86 74 76 76 Q70 74 72 62 Z" fill="#f8fafc" opacity="0.9" />
+      </g>
+
+      <!-- Brain Tumor Detected Label -->
+      <text x="184" y="222" font-size="16" font-weight="700" fill="#dc2626" text-anchor="middle">Brain Tumor Detected</text>
+
+      <!-- Test Another Image Button -->
+      <g transform="translate(104, 235)">
+        <rect width="160" height="34" rx="6" fill="#16a34a" />
+        <text x="80" y="22" font-size="12.5" font-weight="600" fill="#ffffff" text-anchor="middle">Test Another Image</text>
+      </g>
+    </g>
+  </g>
+</svg>
